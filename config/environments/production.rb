@@ -2,7 +2,6 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  action_mailer.default_url_options
   config.action_mailer.delivery_method = :cloudmailin
   config.action_mailer.perform_caching = false
   config.action_mailer.default_url_options = { host: 'cloudmailin.com' }
