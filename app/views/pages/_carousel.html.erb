@@ -1,0 +1,41 @@
+<div id="carousel_activities" class="carousel slide carousel-fade col-md-6  mt-4" data-bs-ride="carousel">
+  <div class="carousel-inner shadow-lg rounded">
+    <div class="carousel-item active">
+      <%= image_tag("carouselA.jpg", class:"d-block w-100") %>
+      <div class="carousel-caption d-none d-md-block">
+        <div class="photo-container rounded text-body">
+          <h5>Μαυρογιάννης</h5>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag("carouselB.jpg", class:"d-block w-100") %>
+      <div class="carousel-caption d-none d-md-block">
+        <div class="photo-container rounded text-body">
+          <h5>Παντελής Καρφάκης</h5>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag("carouselC.jpg", class:"d-block w-100") %>
+      <div class="carousel-caption d-none d-md-block">
+        <div class="photo-container rounded text-body">
+          <h5>Ελένη Δροσάκη</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carousel_activities" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carousel_activities" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carousel_activities" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel_activities" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel_activities" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>

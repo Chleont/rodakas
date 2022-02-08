@@ -1,0 +1,170 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+/* Navbar */
+.navbar{
+  background-color: #e9dfdc;
+}
+.nav-link{
+  margin-right: 1vw;
+}
+/* footer */
+#footer{
+  color: #e9dfdc;
+}
+.footer-link{
+  width:30px;
+}
+/* Home page */
+
+.home{
+  background-image: url(home_front.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+	background-size: cover;
+}
+.home:after {
+  content:"";
+  height: 100vh;
+  position:absolute;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.5);
+}
+
+#home_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:1!important;
+}
+
+#home_logo p{
+  margin-top: 1em;
+  color: #e9dfdc!important;
+  width:50vw;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  position:absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 650px) {
+  #home_logo p{
+    position:relative!important;
+    top: 10vh!important;
+  }
+}
+
+/* About page */
+
+.about-page{
+  background-color: #303030;
+}
+#about-text{
+  background-image: url('about_back.png');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: none;
+  overflow:scroll;
+  overflow-x: hidden;
+}
+#about-list{
+  margin-bottom: 50px;
+  font-weight:600;
+  line-height:150%;
+}
+
+.text_box{
+  margin-bottom: 50px;
+  font-weight:600;
+	line-height:150%;
+}
+.scroll-section {
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.btn-outline-light{
+  outline-color: #e9dfdc;
+}
+
+/* Archive page */
+
+#archive-page{
+  background-image: url('archive_back.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+	background-size: cover;
+  overflow-x: hidden!important;
+}
+
+.archive-card{
+  border:0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.photo-container{
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 2em;
+  align-items: center center;
+}
+
+#archive-footer:hover {
+  background-color: rgba(45, 45, 45, 0.5);
+}
+@media only screen and (max-width: 650px) {
+  #archive-footer{
+    background-color: rgba(45, 45, 45, 0.5);
+  }
+}
+
+/* Multimedia page */
+
+#multimedia-page{
+  background-image: url('multimedia.jpg')!important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+	background-size: cover;
+  overflow-x: hidden!important;
+}
+
+iframe{
+  align-items: center;
+}
+
+/* Workshop page */
+
+#workshop-page{
+  background-image: url('workshop_back.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+	background-size: cover;
+  overflow-x: hidden!important;
+}
+
+/* Contact page */
+
+
+.alert{
+  background-color: #303030;
+  color: #e9dfdc;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+}
+@media only screen and (max-width: 650px) {
+  #contact_logo{
+    max-width: 50%!important;
+    position:relative!important;
+  }
+}

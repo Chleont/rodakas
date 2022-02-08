@@ -1,0 +1,61 @@
+<html lang="en"  class="overflow-scroll">
+  <div  class="min-vh-100" id="contact-page" style="background-color:#303030;">
+    <div class="col-md-2 offset-md-5 col-6 offset-3" style="margin-top:10vh; margin-bottom:5vh;">
+      <%= image_tag("home_logo.png", class:"img-fluid", id:"contact_logo" ) %>
+    </div>
+    <div class="container-md">
+      <div class="row align-items-start">
+        <div class="text-start col-md-6" style="background-color:transparent; color:#e9dfdc;">
+          <h2>ΕΠΙΚΟΙΝΩΝΙΑ</h2><br>
+          <p>Διεύθυνση: <%= link_to 'Μαργαρίτες Ρεθύμνου, 74052', 'https://goo.gl/maps/tYvfeehq4TCpodGm9', target:"_blank", style: "color:#e9dfdc;" %></p>
+          <p>Email: rodakas.koinsep@gmail.com</p><br>
+          <p>Παδουβά Μαρία – Πρόεδρος: 0030 – 6944330970</p>
+          <p>Λεοντίδης Χαράλαμπος – Γραμματέας: 0030 – 6970366261</p>
+          <p>Φασούλη Ειρήνη – Ταμίας: 0030 – 6976141473</p>
+        </div>
+        <div class="container col-md-6">
+          <%= form_for @contact do |f| %>
+            <div class="form-group" style="color:#e9dfdc;">
+              <h2>ΣΤΕΙΛΤΕ ΜΑΣ ΕΝΑ ΜΗΝΥΜΑ</h2>
+            </div>
+            <div class="form-group" style="color:#303030;">
+              <%= f.label :name, class: "col-form-label" %>
+              <div>
+                <%= f.text_field  :name, required: true, class: "contact-form-text-area form-control rounded", placeholder: "Όνομα"  %>
+              </div>
+            </div>
+            <div class="form-group" style="color:#303030;">
+              <%= f.label :email, class: "col-form-label"  %>
+              <div>
+                <%= f.text_field :email, type:"email", required: true, class: "contact-form-text-area form-control rounded", placeholder: "Email" %>
+              </div>
+            </div>
+            <div class="form-group" style="color:#303030;">
+              <%= f.label :message, class: "col-form-label"  %>
+              <div>
+                <%= f.text_area :message, rows: 5, required: true, class: "contact-form-text-area form-control rounded", placeholder: "Κείμενο" %>
+              </div>
+            </div>
+            <div class= "d-none">
+              <%= f.label :nickname %>
+              <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+            </div>
+
+            <div class="form-group" style="margin-top: 10px;">
+              <%= f.submit 'Αποστολή', class: "btn btn-outline-light mt-3" %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 p-2 mb-4 col-md-6 col-sm-12 text-center rounded text-white">
+      <div class="mb-3">
+        <%= link_to image_tag("footer_fb.png", width: "30px"), 'https://www.facebook.com/%CE%A1%CF%8C%CE%B4%CE%B1%CE%BA%CE%B1%CF%82-%CE%9C%CE%B1%CF%81%CE%B3%CE%B1%CF%81%CE%AF%CF%84%CE%B5%CF%82-%CE%9C%CF%85%CE%BB%CE%BF%CF%80%CE%BF%CF%84%CE%AC%CE%BC%CE%BF%CF%85-107517978163857/?ref=page_internal', target:"_blank", class: "footer-link m-2" %>
+        <%= link_to image_tag("footer_yt.png", width: "30px"), 'https://www.youtube.com/channel/UCFZ2PZdULV6otQCx3BsWSAQ', target:"_blank", class: "footer-link m-2" %>
+      </div>
+      <div>
+        © 2022 Copyright:   <a class="text-white" href="https://rodakas.org/">rodakas.org</a>
+      </div>
+    </div>
+  </div>
+</html>
