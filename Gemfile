@@ -11,10 +11,7 @@ gem 'dotenv-rails', groups: [:development, :production, :test]
 gem "sprockets-rails"
 
 gem 'mail_form'
-#######
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
-gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
-#######
+
 gem 'twitter-bootstrap-rails'
 
 gem 'devise-bootstrap-views'

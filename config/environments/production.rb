@@ -2,18 +2,16 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
-  config.action_mailer.delivery_method = :smtp
+  action_mailer.default_url_options
+  config.action_mailer.delivery_method = :cloudmailin
   config.action_mailer.perform_caching = false
-
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors= true
+  config.action_mailer.default_url_options = { host: 'cloudmailin.com' }
   config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
+    address:              ENV['CLOUDMAILIN_HOST'],
     port:                 587,
-    domain:               'gmail.com',
-    user_name:            ENV["GMAIL_EMAIL"],
-    password:             ENV["GMAIL_PASSWORD"],
+    domain:               'rodakas.heroku.com',
+    user_name:            ENV["CLOUDMAILIN_USERNAME"],
+    password:             ENV["CLOUDMAILIN_PASSWORD"],
     authentication:       'plain',
     enable_starttls_auto: true
   # port: ENV['MAILGUN_SMTP_PORT'],
