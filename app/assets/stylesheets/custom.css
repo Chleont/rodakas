@@ -137,10 +137,6 @@
   overflow-x: hidden!important;
 }
 
-iframe{
-  align-items: center;
-}
-
 /* Workshop page */
 
 #workshop-page{
@@ -151,6 +147,7 @@ iframe{
 	background-size: cover;
   overflow-x: hidden!important;
 }
+
 
 /* Contact page */
 
