@@ -71,7 +71,6 @@
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  background-repeat: none;
   overflow:scroll;
   overflow-x: hidden;
 }
@@ -129,7 +128,8 @@
 /* Multimedia page */
 
 #multimedia-page{
-  background-image: url('multimedia.jpg')!important;
+  background-image: url('about_back.png');
+  height:100vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -148,6 +148,17 @@
   overflow-x: hidden!important;
 }
 
+/* Photo workshop page */
+
+#photoworkshop{
+  background-image: url('about_back.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+	background-size: cover;
+  overflow:scroll;
+  overflow-x: hidden;
+}
 
 /* Contact page */
 
