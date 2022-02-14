@@ -1,0 +1,2 @@
+class PhotoworkshopController < ApplicationController
+end

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 root 'pages#home'
 get 'about', to: 'pages#about'
 get 'workshops', to: 'pages#workshops'
+get 'photoworkshop', to: 'pages#photoworkshop'
 get 'archive', to: 'pages#archive'
 get 'multimedia', to: 'pages#multimedia'
 get 'contactus', to: 'contacts#new'
