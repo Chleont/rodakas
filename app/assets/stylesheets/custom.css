@@ -160,6 +160,10 @@
   overflow-x: hidden!important;;
 }
 
+#broad_img{
+  max-width: 80vw!important;
+}
+
 /* Contact page */
 
 
