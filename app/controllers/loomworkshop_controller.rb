@@ -1,2 +1,2 @@
-class PhotoworkshopController < ApplicationController
+class LoomworkshopController < ApplicationController
 end
