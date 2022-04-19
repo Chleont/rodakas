@@ -160,12 +160,51 @@
   overflow-x: hidden!important;;
 }
 
+/* Loom workshop page */
+
+#loomworkshop{
+  background-image: url('photo-workshop-back.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+	background-size: cover;
+  overflow:scroll;
+  overflow-x: hidden!important;;
+}
+
 #broad_img{
   max-width: 80vw!important;
 }
 
 /* Contact page */
+/* .ff-powered-img{
+  height: 0!important;
+  display:none!important;
+}
 
+#ff-submit-root{
+  outline-color: #e9dfdc!important;
+  margin-top: 1rem !important;
+  color: #f8f9fa!important;
+  border-color: #f8f9fa!important;
+  display: inline-block!important;
+  font-weight: 400!important;
+  line-height: 1.5!important;
+  color: #212529!important;
+  text-align: center!important;
+  text-decoration: none!important;
+  vertical-align: middle!important;
+  cursor: pointer!important;
+  -webkit-user-select: none!important;
+  -moz-user-select: none!important;
+  user-select: none!important;
+  background-color: transparent!important;
+  border: 1px solid transparent!important;
+  padding: .375rem .75rem!important;
+  font-size: 1rem!important;
+  border-radius: .25rem!important;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out!important;
+} */
 
 .alert{
   background-color: #303030;
