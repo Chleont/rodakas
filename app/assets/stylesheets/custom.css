@@ -160,19 +160,19 @@
   overflow-x: hidden!important;;
 }
 
+
 /* Loom workshop page */
 
 #loomworkshop{
+  background-image: url('https://i.imgur.com/QYlfbtI.jpg');
+  background-color: #303030;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
 	background-size: cover;
   overflow:scroll;
   overflow-x: hidden!important;;
-}
-.change-hue-animation{
   animation:hue 60s infinite linear;
-  background-image: url('back_loom.jpg');
 }
 
 @keyframes hue  {
@@ -184,7 +184,7 @@
      -webkit-filter:hue-rotate(360deg);
   }
 
-}
+} */
 #broad_img{
   max-width: 80vw!important;
 }
