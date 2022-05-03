@@ -174,17 +174,26 @@
   overflow-x: hidden!important;;
   animation:hue 60s infinite linear;
 }
+.img_in_weird_hue{
+  animation: antihue 60s infinite linear;
+}
 
+@keyframes antihue  {
+  from {
+     -webkit-filter:hue-rotate(360deg);
+  }  
+  to {
+     -webkit-filter:hue-rotate(0deg);
+  }
+}
 @keyframes hue  {
   from {
      -webkit-filter:hue-rotate(0deg);
-  }
-  
+  }  
   to {
      -webkit-filter:hue-rotate(360deg);
   }
-
-} */
+}
 #broad_img{
   max-width: 80vw!important;
 }
