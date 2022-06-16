@@ -161,6 +161,21 @@
 }
 
 
+/* Stone workshop page */
+
+#stoneworkshop{
+  background-image: url('https://i.imgur.com/V7p19oO.jpg');
+  background-color: #303030;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center center;
+	background-size:cover;
+  overflow:scroll;
+  overflow-x: hidden!important;
+  /* animation:hue 60s infinite linear; */
+}
+
 /* Loom workshop page */
 
 #loomworkshop{
@@ -192,6 +207,22 @@
   }  
   to {
      -webkit-filter:hue-rotate(360deg);
+  }
+}
+@keyframes grey  {
+  from {
+      -webkit-filter:grayscale(0%);
+  }  
+  to {
+      -webkit-filter:grayscale(100%);
+  }
+}
+@keyframes antigrey  {
+  from {
+      -webkit-filter:grayscale(100%);
+  }  
+  to {
+      -webkit-filter:grayscale(0%);
   }
 }
 #broad_img{
